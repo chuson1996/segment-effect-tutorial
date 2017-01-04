@@ -7,8 +7,12 @@ class App extends Component {
     return (
       <div className="segmenter">
         <div className="segmenter__background"></div>
-        <div className="segmenter__pieces">
-          <div className="segmenter_wrap">
+        <div className="segmenter__pieces" style={{
+            perspective: `400px`
+          }}>
+          <div className="segmenter__wrap" style={{
+            transform: `translateZ(20px)`
+          }}>
             <div className="segmenter__box" style={{
               clipPath: `polygon(70% 12%, 90% 12%, 90% 22%, 70% 22%)`
             }}></div>
