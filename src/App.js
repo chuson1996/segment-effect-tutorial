@@ -13,6 +13,12 @@ class App extends Component {
           <div className="segmenter__wrap" style={{
             transform: `translateZ(20px)`
           }}>
+            <div className="segmenter__shadow" style={{
+              top: `12%`,
+              left: `70%`,
+              width: `20%`,
+              height: `10%`
+            }}></div>
             <div className="segmenter__box" style={{
               clipPath: `polygon(70% 12%, 90% 12%, 90% 22%, 70% 22%)`
             }}></div>
