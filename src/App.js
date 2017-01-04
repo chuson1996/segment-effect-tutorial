@@ -71,6 +71,24 @@ class App extends Component {
             </Motion>
           ) }
         </div>
+        <div className="segmenter__body">
+          <Motion
+            defaultStyle={{
+              letterSpacing: 31,
+              opacity: 0
+            }}
+            style={{
+              letterSpacing: animate(12),
+              opacity: animate(1)
+            }}>
+            { ({ letterSpacing, opacity }) =>
+              <h1 style={{
+                letterSpacing,
+                opacity
+              }}>SEGMENT EFFECT</h1>
+            }
+          </Motion>
+        </div>
       </div>
     );
   }

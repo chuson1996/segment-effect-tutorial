@@ -6,6 +6,7 @@
 .segmenter__background,
 .segmenter__pieces,
 .segmenter__wrap,
+.segmenter__body,
 .segmenter__box {
   position: absolute;
   width: 100%;
@@ -23,4 +24,16 @@
 .segmenter__shadow {
   position: absolute;
   box-shadow: 0px 7px 10px 3px rgba(0, 0, 0, 0.45);
+}
+
+.segmenter__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.segmenter__body h1{
+  font-family: 'Kumar One', cursive;
+  font-size: 7vw;
+  white-space: nowrap;
 }
